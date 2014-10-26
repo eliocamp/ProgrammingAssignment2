@@ -26,7 +26,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## This function returns the inverse of a matrix. If it was computed
 ## and stored in the list, it will return the cached version. If not, it will
-## compute it and then 
+## compute it and then cache it. 
 
 cacheSolve <- function(x, ...) {
         inv <- x$getinv()
