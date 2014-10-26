@@ -1,5 +1,5 @@
 ## Since geting the inverse of a matrix can be costly, this couple of functions 
-## can cache the result of the operation for future 
+## can cache the result of the operation for future recalling. 
 
 ## This function makes a list with 4 functions
 ## 1) set(x) -> sets the value of the matrix
@@ -24,9 +24,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-
-
-## Write a short comment describing this function
+## This function returns the inverse of a matrix. If it was computed
+## and stored in the list, it will return the cached version. If not, it will
+## compute it and then 
 
 cacheSolve <- function(x, ...) {
         inv <- x$getinv()
